@@ -2,10 +2,11 @@
 
 > Pot + Partner. 센서 상태를 바탕으로 로봇의 급수·환기·일조량 관리를 자동화하고, Flutter 앱에서 식물의 상태와 성장 기록을 확인하는 IoT 서비스입니다.
 
-<p align="center">
-  <img src="docs/images/screens.png" width="880" alt="PotneR Flutter 앱의 홈, 환경 정보, 일기 상세, 성장 비교 화면">
-</p>
-<p align="center"><sub>Flutter 앱 화면 — 홈 · 환경 정보 · 성장 일기 · 성장 비교 (프로젝트 종료 후 시연용 데이터로 다시 녹화)</sub></p>
+| 홈 | 환경 분석 | 식물 일기 | 성장 타임랩스 |
+| :---: | :---: | :---: | :---: |
+| <img src="docs/images/demo/home.gif" width="200" alt="홈 화면에서 식물 상태와 센서 값을 확인하는 데모"> | <img src="docs/images/demo/environment.gif" width="200" alt="환경 정보 화면에서 센서 이력 그래프를 확인하는 데모"> | <img src="docs/images/demo/diary.gif" width="200" alt="식물 일기 목록에서 일기 상세와 상태 리포트를 여는 데모"> | <img src="docs/images/demo/timelapse.gif" width="200" alt="1일차부터 30일차까지 같은 화분 사진을 하루씩 재생하는 타임랩스 데모"> |
+
+<sub>Flutter 앱을 프로젝트 종료 후 시연용 데이터로 다시 실행해 녹화했습니다. 성장 사진 30장은 시연용으로 만든 이미지이고, 화면 속 날짜는 녹화 시점 기준입니다.</sub>
 
 | 기간 | 팀 구성 | 내 역할 | 수상 |
 | --- | --- | --- | --- |
@@ -32,13 +33,7 @@ SSAFY GitLab에서 파트별 브랜치로 관리하던 코드를 이 저장소 �
 | 로봇 대화 · 표정 | STT → LLM → TTS로 식물 페르소나가 대답하고, 화면에 상태별 표정 표시 | `robot/` (대화·표정) · `server/` `app/` (대화 기록) |
 | 귀가 마중 | 앱이 GPS 지오펜싱으로 사용자의 귀가를 감지하면 로봇이 현관으로 마중 | `app/` `server/` `robot/` |
 
-### 앱 화면
-
-| 홈 | 환경 분석 | 타임랩스 |
-| :---: | :---: | :---: |
-| <img src="docs/images/demo/home.gif" width="240" alt="홈 화면에서 식물 상태와 센서 값을 확인하는 데모"> | <img src="docs/images/demo/environment.gif" width="240" alt="환경 정보 화면에서 센서 이력 그래프를 확인하는 데모"> | <img src="docs/images/demo/timelapse.gif" width="240" alt="성장 사진 타임랩스를 재생하는 데모"> |
-
-<sub>세 화면 모두 프로젝트 종료 후 시연용 데이터를 넣어 녹화했습니다. 화면 속 날짜는 녹화 시점 기준이라 프로젝트 기간과 다릅니다.</sub>
+### 로봇 시연 영상
 
 실제 로봇 시연 영상은 로봇 파트 팀원(jedabin)이 정리해 올린 영상입니다. 제 작업물이 아니어서 링크로만 소개합니다.
 
