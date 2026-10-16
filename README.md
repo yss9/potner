@@ -172,13 +172,13 @@ Raspberry Pi 급수 스테이션과 Jetson 로봇의 설치·실행 방법은 �
 
 ## 폴더 구조
 
-| 폴더 | 내용 | 원래 브랜치 |
-| --- | --- | --- |
-| [`app/`](app) | Flutter 앱 — 식물·센서·성장 기록 화면, 장치 제어, 푸시 알림 | `App-develop` |
-| [`server/`](server) | Spring Boot 백엔드, Compose·Nginx·Mosquitto·Jenkins 설정, YOLO 추론 서비스 | `Server-master` |
-| [`robot/`](robot) | Jetson · ROS 2 화분 로봇 — 자율 주행, 도킹, 토양 수분·조도 센서, 로봇 대화 | `Robot-develop` |
-| [`raspberry/`](raspberry) | Raspberry Pi 급수 스테이션 — 센서 수집, 펌프·팬·카메라 제어 | `Raspberry-develop` |
-| [`jupyter/`](jupyter) | YOLO 기반 식물 성장 단계 탐지 실험 | `Jupyter-develop` |
+| 폴더 | 내용 |
+| --- | --- |
+| [`app/`](app) | Flutter 앱 — 식물·센서·성장 기록 화면, 장치 제어, 푸시 알림 |
+| [`server/`](server) | Spring Boot 백엔드, Compose·Nginx·Mosquitto·Jenkins 설정, YOLO 추론 서비스 |
+| [`robot/`](robot) | Jetson · ROS 2 화분 로봇 — 자율 주행, 도킹, 토양 수분·조도 센서, 로봇 대화 |
+| [`raspberry/`](raspberry) | Raspberry Pi 급수 스테이션 — 센서 수집, 펌프·팬·카메라 제어 |
+| [`jupyter/`](jupyter) | YOLO 기반 식물 성장 단계 탐지 실험 |
 
 ```text
 potner/
