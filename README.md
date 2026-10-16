@@ -10,7 +10,7 @@
 
 | 기간 | 팀 구성 | 내 역할 | 수상 |
 | --- | --- | --- | --- |
-| 2026.07 ~ 2026.08 | 6인 팀 (SSAFY 15기 공통 프로젝트) | Flutter App · Backend · Infra | 삼성청년 SW/AI 공통프로젝트 우수상 |
+| 2026.07 ~ 2026.08 | 6인 팀 (삼성청년 SW·AI 아카데미) | Flutter App · Backend · Infra | 삼성청년 SW·AI 아카데미 프로젝트 우수상 |
 
 **링크** · [포트폴리오 상세](https://portfolio-sys13-9a4d.vercel.app/projects/potner) · [영상 포트폴리오 (YouTube)](https://www.youtube.com/watch?v=JgmYadg7w9M) · [Git 컨벤션](GIT_CONVENTION.md)
 
@@ -35,14 +35,14 @@ SSAFY GitLab에서 파트별 브랜치로 관리하던 코드를 이 저장소 �
 
 ### 로봇 시연 영상
 
-실제 로봇 시연 영상은 로봇 파트 팀원(jedabin)이 정리해 올린 영상입니다. 제 작업물이 아니어서 링크로만 소개합니다.
+실제 로봇 시연 영상은 로봇 파트 팀원이 정리해 올린 영상입니다. 제 작업물이 아니어서 링크로만 소개합니다.
 
 - [자동 급수 전체 시나리오](robot/docs/media/watering-scenario.mp4) — 임의의 위치에서 스테이션을 찾아가 급수 후 복귀
 - [스테이션 자동 도킹과 급수](robot/docs/media/docking-watering.mp4) — 마커 도킹부터 급수까지
 
 ## 내가 맡은 부분
 
-Flutter 앱, Spring Boot 서버, Jenkins/Docker 배포를 맡았습니다. `app/`과 `server/` 커밋의 대부분이 제 작업입니다. `app/`에는 정송하·주소정이, `server/`에는 주소정·공병우·한동규가 일부 기여했습니다(`server/yolo_cpu_handoff/`는 한동규의 작업). 자율 주행·도킹과 하드웨어 제어 자체는 팀의 다른 파트가 맡았습니다.
+Flutter 앱, Spring Boot 서버, Jenkins/Docker 배포를 맡았습니다. 자율 주행·도킹과 하드웨어 제어는 팀의 다른 파트가 맡았습니다.
 
 | 영역 | 내용 | 범위 |
 | --- | --- | --- |
@@ -53,7 +53,7 @@ Flutter 앱, Spring Boot 서버, Jenkins/Docker 배포를 맡았습니다. `app/
 | 자동 케어 | 자동 급수 체인, 주기 환기, 햇빛 재배치. 명령 결과·타임아웃·건너뜀을 이력으로 관리 | Backend |
 | 수동 제어 · 위치 설정 | 스테이션·햇빛 자리 좌표 관리, 방향 버튼 수동 주행, 앱에서 지도 제작(SLAM) 시작·종료 명령 | App · Backend |
 | 성장 사진 · 타임랩스 | 장치·사용자 사진 업로드, 대표 사진 변경, 날짜별 포토 로그와 삭제, 두 날짜 비교와 배속 조절 타임랩스 | App · Backend · Infra |
-| 생장 단계 연동 | 팀원(한동규)이 만든 YOLO 추론 패키지를 Compose 서비스로 올리고, 사진으로 생장 단계를 판정·기록하도록 서버에 연결 | Backend · Infra |
+| 생장 단계 연동 | 팀원이 만든 YOLO 추론 패키지를 Compose 서비스로 올리고, 사진으로 생장 단계를 판정·기록하도록 서버에 연결 | Backend · Infra |
 | LLM 식물 일기 | 매일 저녁 식물별 일기 생성. 센서 요약에 그날의 급수·송풍·이동과 날씨·돌봄 맥락을 더하고, 화면용 성격과 일기 지시문을 분리 | Backend |
 | FCM 알림 · 딥링크 | 센서 이상, 물 부족, 배수 트레이, 분갈이, 싹·잎·꽃 성장 알림 생성과 발송. 알림에서 해당 식물·날짜의 포토 로그로 이동 | App · Backend |
 | CI/CD | Jenkins 앱·서버 파이프라인, 브랜치별 임시 DB 기동 검증, `Server-master`에서만 배포, Health Check 실패 시 자동 롤백 | Infra |
@@ -199,16 +199,3 @@ potner/
 ├── docs/images/                  # README 이미지
 └── GIT_CONVENTION.md             # 팀 Git 컨벤션
 ```
-
-## 팀
-
-E104 친구사이 (6인). 커밋 기록 기준으로 주로 작업한 폴더입니다.
-
-| 이름 | 주로 작업한 폴더 |
-| --- | --- |
-| 서영석 | `app/`, `server/` — Flutter 앱, 백엔드, 배포 |
-| jedabin | `robot/` |
-| 공병우 | `raspberry/`, `robot/` |
-| 정송하 | `app/` |
-| 주소정 | `app/`, `server/` |
-| 한동규 | `jupyter/`, `robot/`, `server/yolo_cpu_handoff/` |
