@@ -14,8 +14,6 @@
 
 **링크** · [포트폴리오 상세](https://portfolio-sys13-9a4d.vercel.app/projects/potner) · [영상 포트폴리오 (YouTube)](https://www.youtube.com/watch?v=JgmYadg7w9M) · [Git 컨벤션](GIT_CONVENTION.md)
 
-SSAFY GitLab에서 파트별 브랜치로 관리하던 코드를 이 저장소 하나에 폴더로 합쳤습니다. 각 폴더의 커밋 기록은 원래 브랜치의 기록을 그대로 옮긴 것입니다.
-
 ## 주요 기능
 
 서비스의 주요 기능입니다. 마지막 열은 기능이 구현된 폴더이고, 이 중 제가 맡은 범위는 [내가 맡은 부분](#내가-맡은-부분)에 따로 적었습니다.
